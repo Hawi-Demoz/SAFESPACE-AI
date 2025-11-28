@@ -221,7 +221,7 @@ MIT License - Built with care for survivor safety and empowerment.
 
 ## 🆘 Emergency Resources
 
-If you are in immediate danger, please contact local authorities:
+If you are in immediate danger, please contact local authorities via either:
 - **UNHCR toll-free help line:** 1517
 - **Healthcare Assistance Kenya (HAK):** 1195
 - **Coalition on Violence Against Women (COVAW):** 0800 720 553
