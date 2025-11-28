@@ -1,0 +1,247 @@
+You are an expert full-stack engineer, cybersecurity specialist, AI safety researcher, and UI/UX designer. Your task is to build a complete, production-ready hackathon project called:
+“SafeSpace AI – The Digital Violence Early-Warning & Survivor Support System.”
+
+This solution must directly align with the theme “UNiTE to End Digital Violence Against All Women & Girls.”
+
+🎯 Project Requirements
+
+Build a working prototype with three main components:
+
+1️⃣ Browser Extension – Real-Time Harm Detection
+
+A Chrome/Firefox extension with:
+
+Core Features
+
+Detect harmful, abusive, threatening, or coercive messages in real time.
+
+Use a lightweight toxicity/abuse classifier (e.g., small HF model or logistic regression) that runs locally/offline if possible.
+
+Scan:
+
+typed messages
+
+received DMs
+
+comments
+
+online content
+
+Show a popup alert when harmful content is detected:
+
+“Warning — This message may be harmful”
+
+Provide quick action buttons.
+
+Actions Menu
+
+Include buttons for:
+
+Hide content
+
+Copy safe-report template
+
+Capture screenshot for evidence
+
+Open SafeSpace Support Hub
+
+Tips for staying safe
+
+Technical Requirements
+
+Manifest V3
+
+Content scripts + background service worker
+
+Secure permissions
+
+No user data sent to external servers unless explicitly required
+
+2️⃣ Web App – Survivor Support & Safety Hub
+
+A beautiful, responsive React + Tailwind frontend and Flask backend.
+
+Core Pages
+
+Landing Page (Mission, Safety Message, Features)
+
+Support Hub
+
+Step-by-step guidance
+
+Safety tips
+
+Online protection checklists
+
+Encrypted Evidence Locker
+
+Upload text/screenshot
+
+Encrypt in browser with AES
+
+Store encrypted version only
+
+Digital Literacy Mini-Courses
+
+Password safety
+
+Privacy
+
+Spotting manipulation
+
+Local/Regional Support Directory
+
+ML Insights Dashboard
+
+Show weekly “Exposure to Harm” rating
+
+Simple toxicity stats
+
+Visual heatmap
+
+UI/UX Requirements
+
+Dark mode (default)
+
+Soft gradients + calm, empowering theme
+
+Big typography
+
+Minimalistic layouts
+
+Mobile-first
+
+3️⃣ Backend (Flask API)
+
+Build secure, clean APIs:
+
+Endpoints
+
+/analyze → analyze text toxicity via ML
+
+/encrypt → AES encryption
+
+/evidence → upload & store encrypted file
+
+/resources → list safety resources
+
+/stats → return user analytics (local storage or mock DB)
+
+Security
+
+Input validation
+
+CORS protection
+
+Rate limiting
+
+Completely avoid storing unencrypted user data
+
+🧠 Machine Learning Requirements
+
+Use a lightweight model such as:
+
+HuggingFace unitary/toxic-bert
+
+textattack/bert-base-uncased-ag-news (fine-tuned)
+
+DistilBERT with toxicity head
+
+OR a simple TF-IDF + Logistic Regression model
+
+Must detect:
+
+Harassment
+
+Sexual coercion
+
+Threats
+
+Hate
+
+Identity attacks
+
+Manipulative language
+
+Provide confidence scores.
+
+📦 Deliverables
+
+You MUST generate all required code and files:
+
+Files to produce
+
+Full browser extension folder
+
+React project scaffolded + components
+
+Flask backend project
+
+ML model code (local)
+
+Encryption utilities
+
+API documentation
+
+README.md
+
+Architecture diagram (ASCII or Mermaid)
+
+Instructions to run locally
+
+Deployment instructions (optional)
+
+🧪 Testing
+
+Include:
+
+Unit tests for API
+
+Manual test cases for extension
+
+Mock input/output
+
+Edge case handling
+
+🏆 Hackathon Scoring Optimization
+
+Focus on delivering:
+
+Innovation (25%)
+
+Real-time detection
+
+Local ML
+
+Evidence locker
+
+Security (15%)
+
+Local encryption
+
+Privacy-first design
+
+Performance (20%)
+
+Lightweight models
+
+Optimized React + Flask
+
+Development Process (25%)
+
+Clear documentation
+
+Clean architecture
+
+Testing (15%)
+
+Provide meaningful tests
+
+🔥 FINAL INSTRUCTIONS
+
+Build EVERYTHING end-to-end.
+Generate complete files.
+Do not skip sections.
+Use best practices.
+Make the UI visually stunning.
+Ensure the project is impressive enough to win a hackathon

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeSpace AI</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <span class="shield">🛡️</span>
+        <div>
+          <h1>SafeSpace<span class="accent">AI</span></h1>
+          <p class="tagline">Digital Safety Shield</p>
+        </div>
+      </div>
+      <div id="status-indicator" class="status active">
+        <span class="status-dot"></span>
+        <span class="status-text">Active</span>
+      </div>
+    </header>
+
+    <!-- Stats -->
+    <section class="stats">
+      <div class="stat">
+        <span class="stat-value" id="threats-blocked">0</span>
+        <span class="stat-label">Threats Blocked</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value" id="scans-completed">0</span>
+        <span class="stat-label">Scans</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value" id="evidence-count">0</span>
+        <span class="stat-label">Evidence</span>
+      </div>
+    </section>
+
+    <!-- Toggle -->
+    <section class="toggle-section">
+      <label class="toggle-label">
+        <span>Protection Enabled</span>
+        <div class="toggle">
+          <input type="checkbox" id="enabled-toggle" checked>
+          <span class="toggle-slider"></span>
+        </div>
+      </label>
+    </section>
+
+    <!-- Sensitivity -->
+    <section class="sensitivity-section">
+      <label class="section-label">Detection Sensitivity</label>
+      <div class="sensitivity-buttons">
+        <button class="sensitivity-btn" data-value="low">Low</button>
+        <button class="sensitivity-btn active" data-value="medium">Medium</button>
+        <button class="sensitivity-btn" data-value="high">High</button>
+      </div>
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="actions">
+      <button class="action-btn primary" id="btn-support">
+        <span>💜</span> Support Hub
+      </button>
+      <button class="action-btn secondary" id="btn-evidence">
+        <span>🔒</span> Evidence Locker
+      </button>
+      <button class="action-btn secondary" id="btn-scan">
+        <span>🔍</span> Scan Page Now
+      </button>
+    </section>
+
+    <!-- Evidence Preview -->
+    <section class="evidence-section" id="evidence-section">
+      <div class="section-header">
+        <span class="section-label">Recent Evidence</span>
+        <button class="clear-btn" id="btn-clear-evidence">Clear All</button>
+      </div>
+      <div class="evidence-list" id="evidence-list">
+        <p class="empty-state">No evidence saved yet</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="#" id="link-settings">Settings</a>
+      <span class="divider">•</span>
+      <a href="#" id="link-help">Help</a>
+      <span class="divider">•</span>
+      <span class="version">v1.0.0</span>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

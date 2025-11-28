@@ -1,0 +1,95 @@
+the following requirements:
+
+1. Real-Time Harm Detection
+
+Detect harmful, abusive, or threatening messages in real time on web pages (social media, chat platforms, comments).
+
+Use a lightweight ML model (local or browser-based) to classify messages as:
+
+Harassment
+
+Threat
+
+Sexual abuse / coercion
+
+Identity attacks
+
+Hate speech
+
+The detection must run locally (no server required).
+
+2. Popup Warning UI
+
+Show a popup when harmful content is detected.
+
+Popup includes:
+
+Warning message (“This message may be harmful”)
+
+Action buttons: Hide content, Save evidence (encrypted), Open support hub, How to report
+
+UI should be clean, minimalistic, and mobile-friendly.
+
+3. Evidence Capture & Security
+
+Capture screenshots or text of harmful messages.
+
+Encrypt them locally (AES or equivalent) before storing.
+
+Provide a way to send them safely to the web app’s support hub.
+
+4. Extension Settings
+
+Allow the user to:
+
+Enable/disable detection
+
+Adjust sensitivity thresholds
+
+Manage saved evidence
+
+Store settings securely in browser storage.
+
+5. Seamless Web App Integration
+
+Connect the extension with the main web app:
+
+Open support pages
+
+Push captured evidence
+
+Share user preferences (securely)
+
+6. Clean Code & Documentation
+
+Generate all required files: manifest.json, contentScript.js, background.js, popup.html, popup.js, styles.css
+
+Include comments explaining code logic.
+
+Provide a step-by-step README for installation, running, and testing.
+
+⭐ Additional Instructions
+
+Make it fully compatible with Chrome, Edge, and Firefox (Manifest V3).
+
+Ensure performance is fast and light-weight.
+
+Focus on user privacy & security — no user data leaves the browser unencrypted.
+
+Make it visually impressive for a hackathon demo.
+
+Include a mock ML model if necessary for demo purposes.
+
+Outcome
+
+The extension should:
+
+Detect harmful content in real time
+
+Alert the user with an actionable popup
+
+Securely save evidence
+
+Integrate with the main web app
+
+Be fully functional, polished, and ready for presentation
