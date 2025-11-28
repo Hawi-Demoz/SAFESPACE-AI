@@ -222,9 +222,11 @@ MIT License - Built with care for survivor safety and empowerment.
 ## 🆘 Emergency Resources
 
 If you are in immediate danger, please contact local authorities:
-- **US:** 911
-- **UK:** 999
-- **EU:** 112
+- **UNHCR toll-free help line:** 1517
+- **Healthcare Assistance Kenya (HAK):** 1195
+- **Coalition on Violence Against Women (COVAW)** 0800 720 553
+- **Kenya police emergency hotline:** 999/112
+- **Center for Victims of Torture (CVT):** 0790781359
 
 For digital violence support:
 - [National Domestic Violence Hotline](https://www.thehotline.org/)
