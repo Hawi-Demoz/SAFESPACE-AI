@@ -109,4 +109,4 @@ The system uses a rule-based classifier with:
 **Design Decisions:**
 - Bundling frequently-used server dependencies reduces cold start times (important for serverless deployment)
 - Vite provides superior DX with instant HMR and optimized production builds
-- Custom plugins for Replit-specific functionality (error overlay, dev banner, meta image updates)
+- Standard Vite plugins only; removed Replit-specific plugins for portability
