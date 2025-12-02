@@ -125,6 +125,8 @@ Visit the homepage and use the "Test the AI Protection" section to try the toxic
 │   │   └── App.tsx         # Main app component
 │   └── public/
 │       └── extension/      # Browser extension files
+├── docs/
+│   └── quick-safety-guides.md  # Actionable safety playbooks
 ├── server/
 │   ├── ml/                 # Toxicity detection model
 │   ├── routes.ts           # API endpoints
@@ -233,3 +235,11 @@ For digital violence support:
 ---
 
 Built with ❤️ to end digital violence against women and girls.
+
+## 📚 Quick Safety Guides
+
+For fast, actionable steps to stay safe online, see `docs/quick-safety-guides.md`. It includes:
+- Spotting toxic content quickly
+- De-escalation scripts and reporting flow
+- Moderator playbook and evidence tips
+- Crisis response and wellbeing resources

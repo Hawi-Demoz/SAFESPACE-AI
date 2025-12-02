@@ -8,6 +8,7 @@ import Home from "@/pages/Home";
 import Dashboard from "@/pages/Dashboard";
 import Evidence from "@/pages/Evidence";
 import Resources from "@/pages/Resources";
+import QuickGuides from "@/pages/QuickGuides";
 
 function Router() {
   return (
@@ -16,6 +17,7 @@ function Router() {
       <Route path="/dashboard" component={Dashboard} />
       <Route path="/evidence" component={Evidence} />
       <Route path="/resources" component={Resources} />
+      <Route path="/quick-guides" component={QuickGuides} />
       <Route component={NotFound} />
     </Switch>
   );

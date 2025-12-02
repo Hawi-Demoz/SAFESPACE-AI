@@ -48,6 +48,9 @@
 }
 
 @layer base {
+  /* Global styles */
+  /* Safety Guides typography override */
+  
   * {
     @apply border-border;
   }
@@ -59,6 +62,27 @@
   }
 }
 
+/* Safety Guides typography override */
+.guides-content {
+  font-family: "Roboto", ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.75;
+  font-size: 1.05rem;
+}
+
+.guides-content h1,
+.guides-content h2,
+.guides-content h3,
+.guides-content h4,
+.guides-content h5,
+.guides-content h6 {
+  font-family: "Roboto", ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  letter-spacing: 0.2px;
+}
+
+.guides-content ul { padding-left: 1.25rem; }
+.guides-content li { margin: 0.25rem 0; }
+.guides-content hr { border-color: rgba(255,255,255,0.1); margin: 1rem 0; }
+.guides-content span[style*="background:#ffefef"] { display: inline-block; }
 @layer utilities {
   .glass-panel {
     @apply bg-card/60 backdrop-blur-xl border border-white/10 shadow-xl;

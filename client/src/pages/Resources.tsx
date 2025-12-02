@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { BookOpen, Phone, Globe, ShieldAlert, UserCheck } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Resources() {
   return (
@@ -91,7 +92,7 @@ function ResourceCard({ icon, title, description, action }: { icon: any, title: 
 
 function GuideItem({ title, time }: { title: string, time: string }) {
   return (
-    <div className="p-4 rounded-xl bg-card border border-white/5 hover:border-primary/30 transition-colors cursor-pointer flex items-center justify-between group">
+    <Link href="/quick-guides" className="p-4 rounded-xl bg-card border border-white/5 hover:border-primary/30 transition-colors cursor-pointer flex items-center justify-between group">
       <div className="flex items-center gap-3">
         <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
           <BookOpen className="w-4 h-4" />
@@ -99,6 +100,6 @@ function GuideItem({ title, time }: { title: string, time: string }) {
         <span className="font-medium group-hover:text-primary transition-colors">{title}</span>
       </div>
       <span className="text-xs text-muted-foreground">{time}</span>
-    </div>
+    </Link>
   )
 }
